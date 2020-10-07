@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all.all.updatehoadon"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Update hóa đơn"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtmahoadonupdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập mã hóa đơn cần update"
+            android:inputType="textPersonName"></EditText>
+
+        <Button
+            android:id="@+id/btntimhoadon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtphonekhachhangupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Số điện thoại khách hàng"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/edttenkhachhangupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên khách hàng"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edttensachupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên sách"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edttheloaisachupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Thể loại sách"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtsoluongupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="số lượng mua"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtgiabanupdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Gía Bán"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnupdatenew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update now" />
+
+        <Button
+            android:id="@+id/btnhuyupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+    </LinearLayout>
+
+</LinearLayout>

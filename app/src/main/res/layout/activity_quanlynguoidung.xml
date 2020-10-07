@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all.all.quanlynguoidung"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quản lý user người dùng"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnthemnguoidung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm người dùng"
+            android:onClick="themnguoidung"/>
+
+        <Button
+            android:id="@+id/btnupdatenguoidung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update người dùng"
+            android:onClick="updatenguoidung"/>
+
+        <Button
+            android:id="@+id/btnthoat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableBottom="@android:drawable/btn_dialog"
+            android:onClick="thoat" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Danh sách người dùng"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvdanhsachnguoidung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

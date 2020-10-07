@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all.all.themnguoidung"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgnguoidung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/emone"
+        android:onClick="imgthemnguoidung"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Điền thông tin người dùng mới để đăng ký"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtmanguoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="mã người dùng VD:fpt1234"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edthotennguoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Họ và Tên người đăng ký"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtsodienthoainguoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Số điện thoại"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtusernguoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tên đăng nhập hệ thống"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtpassnguoidung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mật Khẩu"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edtpassnguoidunglan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nhập Lại mật khẩu "
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btndangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:onClick="dangkynguoidung"/>
+
+        <Button
+            android:id="@+id/btnhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:onClick="huydangkynguoidung"/>
+    </LinearLayout>
+</LinearLayout>

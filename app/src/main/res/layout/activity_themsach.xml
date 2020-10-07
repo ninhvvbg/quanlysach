@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all.all.themsach"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="New sách mới"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtmabarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mã Barcode Sách"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edttensach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên Sách"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtnhaxuatban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhà Xuất Bản"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edttacgia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên Tác giả"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edttentheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tên Thể Loại Sách"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtsoluongsach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Số Lượng Sách thêm vào"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtgiaban"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Giá Bán của Sách"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnnewsach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new sách"
+            android:onClick="newnow"/>
+
+        <Button
+            android:id="@+id/btnhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hủy"
+            android:onClick="huy"/>
+    </LinearLayout>
+
+</LinearLayout>
